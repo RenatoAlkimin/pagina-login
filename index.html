@@ -1,3 +1,4 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/index.html b/index.html
 index 77671e42a8d1a884a19b9209a603be03701ba0bb..bcb361e61cf4dc9c594166631515e0e28da01612 100644
 --- a/index.html
@@ -39,3 +40,6 @@ index 77671e42a8d1a884a19b9209a603be03701ba0bb..bcb361e61cf4dc9c594166631515e0e2
          <div class="options">
            <label><input type="checkbox" /> Remember for 30 days</label>
            <a href="#">Forgot password?</a>
+ 
+EOF
+)
